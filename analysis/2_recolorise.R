@@ -11,7 +11,7 @@ library(base)
 
 ## For treatment images
 # load the imageList_aligned object:
-imageList_aligned_treatment <- readRDS("rda_files/imageList_aligned_treatment.rds")
+imageList_aligned_treatment <- readRDS("rds_files/imageList_aligned_treatment.rds")
 
 # convert from RasterBricks to image arrays:
 imgs_treatment <- lapply(imageList_aligned_treatment, brick_to_array)
@@ -93,7 +93,7 @@ saveRDS(rc_list_treatment, "rds_files/rc_list_treatment.rds")
 #############################################################################################################################
 ## For control images
 # load the imageList_aligned object:
-imageList_aligned_control <- readRDS("rda_files/imageList_aligned_control.rds")
+imageList_aligned_control <- readRDS("rds_files/imageList_aligned_control.rds")
 
 # convert from RasterBricks to image arrays:
 imgs_control <- lapply(imageList_aligned_control, brick_to_array)
@@ -246,7 +246,7 @@ saveRDS(patternize_list_all, "rds_files/patternize_list_all.rds")
 #######################################################################################
 ## to quickly load samples of colour cluster imposed images
 # the imageList_aligned object:
-# imageList_aligned_treatment <- readRDS("rda_files/imageList_aligned_treatment.rds")
+# imageList_aligned_treatment <- readRDS("rds_files/imageList_aligned_treatment.rds")
 # 
 # # convert from RasterBricks to image arrays:
 # imgs_treatment <- lapply(imageList_aligned_treatment, brick_to_array)
@@ -257,7 +257,7 @@ saveRDS(patternize_list_all, "rds_files/patternize_list_all.rds")
 # 
 # ## For control images
 # # load the imageList_aligned object:
-# imageList_aligned_control <- readRDS("rda_files/imageList_aligned_control.rds")
+# imageList_aligned_control <- readRDS("rds_files/imageList_aligned_control.rds")
 # 
 # # convert from RasterBricks to image arrays:
 # imgs_control <- lapply(imageList_aligned_control, brick_to_array)

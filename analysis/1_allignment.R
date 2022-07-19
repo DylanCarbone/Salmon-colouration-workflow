@@ -63,7 +63,7 @@ imageList_aligned_control <- alignLan(imageList_control, landmarkList_control, t
                                         inverse = F, res = c(100, 500))
 
 #save aligned treatment bodies
-saveRDS(imageList_aligned_treatment, file = 'rda_files/imageList_aligned_treatment.rds')
+saveRDS(imageList_aligned_treatment, file = 'rds_files/imageList_aligned_treatment.rds')
 
 #save aligned control bodies
-saveRDS(imageList_aligned_control, file = 'rda_files/imageList_aligned_control.rds')
+saveRDS(imageList_aligned_control, file = 'rds_files/imageList_aligned_control.rds')
