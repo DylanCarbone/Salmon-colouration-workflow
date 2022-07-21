@@ -215,7 +215,7 @@ plot(marginal_effects(fit_formula_1, effects = "treatment",
 plot(marginal_effects(fit_formula_1, effects = "treatment", conditions = conditions, re_formula = NA),
      points = TRUE, rug = TRUE)
 
-# the ooga booga
+# Test marginal effects for length range
 test <- marginal_effects(fit_formula_1, effects = "treatment",
                          conditions = conditions)
 
